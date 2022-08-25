@@ -15,7 +15,7 @@ import javax.validation.Valid;
 @RequiredArgsConstructor
 public class AuthController {
     // 회원가입 및 로그인 관련
-    private final AuthService authService;  // 실질적인 API 구현은 여기에
+    private final AuthService authService;
 
     @PostMapping("/signup")
     public ResponseDto<?> signup(@RequestBody @Valid MemberSignupDto memberSignupDto) {
