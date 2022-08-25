@@ -1,0 +1,42 @@
+### 회원가입
+POST http://localhost:8080/api/member/signup
+Content-Type: application/json
+
+{
+  "nickname": "user1",
+  "password": "user1",
+  "passwordConfirm": "user1"
+}
+
+### 로그인
+POST http://localhost:8080/api/member/login
+Content-Type: application/json
+
+{
+  "nickname": "user1",
+  "password": "user1"
+}
+
+### 내 정보 확인
+GET http://localhost:8080/member/me
+Authorization: Bearer
+
+### 내 닉네임 확인
+GET http://localhost:8080/member/user1
+Authorization: Bearer
+
+### 게시글 작성
+POST http://localhost:8080/api/post
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY2MTQxODM5Mn0.O5Js9RygAG_FWzKhW5b6GpaMUeiCVyc5IZka_ROTPrszmnz9gWCQ57IJwjrx1FBa6PUxj70_NpY6QIqUuhaz9g
+Content-Type: application/json
+
+{
+  "title" : "title1",
+  "content" : "content1"
+}
+
+### 게시글 조회
+GET http://localhost:8080/api/post
+
+
+###
